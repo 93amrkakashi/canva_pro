@@ -28,33 +28,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
 let people = [
   {
-    photo: 'url("../pics/2.jpg")',
+    photo: 'url("./pics/2.jpg")',
     name: "محمد عبدالله",
     description: "الف شكر يا صحبى ",
   },
   {
-    photo: 'url("../pics/3.jpg")',
+    photo: 'url("./pics/3.jpg")',
     name: "خالد ابو الفتوح",
     description:
       "والله العظيم، Canva Pro جابت لي أكتر من اللي أنا كنت بتوقعه، شغل جامد",
   },
   {
-    photo: 'url("../pics/4.jpg")',
+    photo: 'url("./pics/4.jpg")',
     name: "على الفنان",
     description: "شغل فاخر من الاخر",
   },
   {
-    photo: 'url("../pics/1.jpg")',
+    photo: 'url("./pics/1.jpg")',
     name: "حيدر الفضيل",
     description: "هيك الشغل والا بلا فديتك والله يا اخوى",
   },
   {
-    photo: 'url("../pics/5.jpg")',
+    photo: 'url("./pics/5.jpg")',
     name: "صابر محمود",
     description: "الف شكر على الاكونت يا صحبى ",
   },
   {
-    photo: 'url("../pics/6.jpg")',
+    photo: 'url("./pics/6.jpg")',
     name: "ناير نصحى",
     description: "عاش والله مفيش اكونت freepik",
   },
