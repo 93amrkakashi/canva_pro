@@ -9,7 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Cairo', sans-serif;
-
+scroll-behavior: smooth;
 }
 
 body {
@@ -90,7 +90,7 @@ button:hover {
   color: #fff;
   font-weight: bold;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 35px;
   padding: 10px;
