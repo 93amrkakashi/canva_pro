@@ -58,7 +58,26 @@ let people = [
     name: "ناير نصحى",
     description: "عاش والله مفيش اكونت freepik",
   },
-
+  {
+    photo: 'url("./pics/7.jpg")',
+    name: "حسام الدين عبدالله",
+    description: "شكرا يا راجل يا محترم , ومستنيين الجديد منك بإذن الله",
+  },
+  {
+    photo: 'url("./pics/8.jpg")',
+    name: "عاصم جلال عاشور",
+    description: "تسلم الاياااااادى",
+  },
+  {
+    photo: 'url("./pics/9.jpg")',
+    name: "خالد ربيع",
+    description: "شكرا يا صحبى",
+  },
+  {
+    photo: 'url("./pics/10.jpg")',
+    name: "ابراهيم محمد",
+    description: "يا سلام لو اكونتات فرى بيك بالمرة تبقا عظمة قوى كدا",
+  },
 ];
 
 
