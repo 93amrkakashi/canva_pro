@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
   <meta charset="UTF-8">
@@ -20,13 +20,23 @@
 <body dir="rtl">
   <div class="container">
     <div class="header">
-        <li><a href="#emailForm">أحصل على العرض</a></li>
-        <div class="logo">
-          <a href="#features">
-            <img class="logo" src="./pics/canva-logo-png.png" alt="">
-          </a>
-        </div>
-          <li><a href="#content-wrapper">آراء العمــلاء</a></li>
+      <div class="logo">
+        <a href="#features">
+          <img class="logo" src="./pics/canva-logo-png.png" alt="">
+        </a>
+      </div>
+      <div class="links">
+        <li><a href="#emailForm"> أطلب الآن </a></li>
+        <li><a href="#content-wrapper"> الآراء </a></li>
+        <select id="languageSelect" class="bg-[#0167b4] max-w-[130px] h-[40px] rounded-3xl text-white px-3 mx-12"
+          onchange="changeLanguage()">
+          <option value="ar" class="px-12 text-lg font-bold p-2 lg:px-4 md:mx-2 text-white">العربية</option>
+          <option selected value="fr" class="px-12 text-lg font-bold p-2 lg:px-4 md:mx-2 text-white">English</option>
+        </select>
+      </div>
+      <div class="bars">
+        <img src="./pics/menu-bar.svg" alt="">
+      </div>
     </div>
     <div class="heading">
       <h1>أحصل على حساب <span class="c_words">Canva Pro</span> مجانا</h1>
@@ -55,7 +65,7 @@
       <input type="email" id="email" name="email" placeholder="ادخل بريدك الإلكتروني" required>
       <button type="submit" id="submitButton">احصل على العرض</button>
     </form>
-    <div class="content-wrapper" id="content-wrapper" >
+    <div class="content-wrapper" id="content-wrapper">
       <h2>شهادات العملاء</h2>
       <div class="wrapper-for-arrows">
         <div style="opacity: 0;" class="chicken"></div>

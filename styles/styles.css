@@ -99,9 +99,13 @@ button:hover {
   /* background: linear-gradient(to right bottom,#03becd, #7229d1 );  */
   background: #fff;
   border-radius: 10px;
+  position: relative;
 }
 
-
+.bars{
+  width: 40px;
+  display: none;
+}
 a {
   color: #03becd;
   text-decoration: none;
@@ -157,7 +161,6 @@ a:hover {
 .c_img {
   max-width: 300px;
   height: auto;
-  margin-left: -30px;
 }
 
 .c_word {
@@ -229,9 +232,22 @@ a:hover {
   }
 
   a {
-    font-size: 18px;
+    font-size: 12px;
     text-align: center;
   }
+  .bars{
+    display: flex;
+  }
+  .links {
+    gap: 20px;
+    max-width: 100%;
+    position: absolute;
+    bottom: -122px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+}
 }
 
 
@@ -265,6 +281,7 @@ a:hover {
   align-items: center;
   padding-top: calc(2rem + 1vmin);
   width: 100%;
+  height: 410;
 }
 
 #imgDiv {

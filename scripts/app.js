@@ -158,3 +158,36 @@ function stopSlideInterval() {
 startSlideInterval();
 
 
+// to change language ==> getting translations and change page content
+function changeLanguage(selectElement) {
+  const selectedValue =
+    selectElement.value || localStorage.getItem("lang") || "ar";
+  document.documentElement.lang = selectedValue;
+  localStorage.setItem("lang", selectedValue);
+// تغيير الترجمات الموجودة
+  const elements = document.querySelectorAll("[data-translation]");
+  elements.forEach((element) => {
+    const translationKey = element.dataset.translation;
+    element.textContent = translations_js[selectedValue][translationKey] || "";
+  });
+}
+
+// *************************************************
+// *************************************************
+// *************************************************
+// to load translations file
+async function loadTranslations() {
+  let lang = localStorage.getItem("lang") || "ar"
+  changeLanguage(lang);
+  // try {
+  //   const response = await fetch("./translations.json");
+  //   if (!response.ok) {
+  //     throw new Error(`Failed to load translations: ${response.status}`);
+  //   }
+  //   translations = await response.json();
+  
+  //   console.log(translations);
+  // } catch (error) {
+  //   console.error("Error loading translations:", error);
+  // }
+}
