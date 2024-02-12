@@ -37,36 +37,29 @@
       <input type="email" id="email" name="email" placeholder="ادخل بريدك الإلكتروني" required>
       <button type="submit" id="submitButton">احصل على العرض</button>
     </form>
-
-    <div class="testimonials">
+    <div class="content-wrapper">
       <h2>شهادات العملاء</h2>
-      <div class="testimonials-carousel">
-        <div class="testimonial">
-          <img class="c_img" src="./pics/canva-logo-png.png" alt="Customer 1">
-            <p>تعليق العميل الأول</p>
+      <div class="wrapper-for-arrows">
+        <div style="opacity: 0;" class="chicken"></div>
+        <div id="reviewWrap" class="review-wrap">
+          <div id="imgDiv" class="">
+          </div>
+          <div id="personName"></div>
+          <div id="profession"></div>
+          <div id="description">
+          </div>
         </div>
-        <div class="testimonial">
-          <img class="c_img" src="./pics/canva-logo-png.png" alt="Customer 1">
-            <p>تعليق العميل الثاني</p>
+        <div class="left-arrow-wrap arrow-wrap">
+          <div class="arrow" id="leftArrow"></div>
         </div>
-        <div class="testimonial">
-          <img class="c_img" src="./pics/canva-logo-png.png" alt="Customer 1">
-            <p>تعليق العميل الثالث</p>
+        <div class="right-arrow-wrap arrow-wrap">
+          <div class="arrow" id="rightArrow"></div>
         </div>
-        <div class="testimonial">
-          <img class="c_img" src="./pics/canva-logo-png.png" alt="Customer 1">
-            <p>تعليق العميل الرابع</p>
-        </div>
-        <div class="testimonial">
-          <img class="c_img" src="./pics/canva-logo-png.png" alt="Customer 1">
-            <p>تعليق العميل الخامس</p>
-        </div>
-    </div>
-    
+      </div>
     </div>
   </div>
 
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="./scripts/app.js"></script>
 </body>
 
