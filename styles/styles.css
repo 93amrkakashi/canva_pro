@@ -9,7 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Cairo', sans-serif;
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -103,10 +103,11 @@ button:hover {
   position: relative;
 }
 
-.bars{
+.bars {
   width: 40px;
   display: none;
 }
+
 a {
   color: #03becd;
   text-decoration: none;
@@ -176,31 +177,6 @@ a:hover {
   color: #4d00b2;
 }
 
-/* .testimonials-carousel {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  gap: 150px;
-  position: relative;
-  min-height: 500px;
-} */
-
-/* .testimonial {
-  position: relative;
-  text-align: center;
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 400px;
-  height: 120px;
-  opacity: 0; 
-  transition: all 0.5s ease; 
-} */
-
-
 
 
 .c_img2 {
@@ -238,9 +214,11 @@ a:hover {
     font-size: 22px;
     text-align: center;
   }
-  .bars{
+
+  .bars {
     display: flex;
   }
+
   .links {
     gap: 20px;
     max-width: 100%;
@@ -252,11 +230,12 @@ a:hover {
     width: 100%;
     opacity: 1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-.mobile{
-  opacity: 0;
-  top: -250px;
-}
+  }
+
+  .mobile {
+    opacity: 0;
+    top: -250px;
+  }
 }
 
 
@@ -418,8 +397,3 @@ a:hover {
     width: 100%;
   }
 }
-
-
-
-
-

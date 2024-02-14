@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html >
 
 <head>
   <meta charset="UTF-8">
@@ -9,11 +9,7 @@
     content="احصل على حساب Canva Pro مجانًا واستمتع بميزاته الرائعة. تصميم محترف لمشاريعك بسهولة وسرعة.">
   <meta name="keywords" content="Canva Pro, تصميم, مجانا, تصميم جرافيك, تصميم مواقع, تصميم مشاريع">
   <link rel="icon" type="image/x-icon" href="./pics/canva.png">
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"> -->
   <link rel="stylesheet" href="./styles/styles.css">
-  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"> -->
 </head>
 
 
@@ -26,12 +22,13 @@
         </a>
       </div>
       <div class="links mobile">
-        <li><a href="#emailForm"> أطلب الآن </a></li>
-        <li><a href="#content-wrapper"> الآراء </a></li>
+        <li><a data-translation="order_now" href="#emailForm"> أطلب الآن </a></li>
+        <li><a data-translation="opinions" href="#content-wrapper"> الآراء </a></li>
         <select id="languageSelect" class="bg-[#0167b4] max-w-[130px] h-[40px] rounded-3xl text-white px-3 mx-12"
-          onchange="changeLanguage()">
+          onchange="changeLanguage()"
+          >
           <option value="ar" class="px-12 text-lg font-bold p-2 lg:px-4 md:mx-2 text-white">العربية</option>
-          <option selected value="fr" class="px-12 text-lg font-bold p-2 lg:px-4 md:mx-2 text-white">English</option>
+          <option selected value="en" class="px-12 text-lg font-bold p-2 lg:px-4 md:mx-2 text-white">English</option>
         </select>
       </div>
       <div class="bars">
@@ -39,7 +36,7 @@
       </div>
     </div>
     <div class="heading">
-      <h1>أحصل على حساب <span class="c_words">Canva Pro</span> مجانا</h1>
+      <h1 data-translation="order_now" >أحصل على حساب <span class="c_words">Canva Pro</span> مجانا</h1>
       <p>فقط أدخل بريدك الإلكتروني للحصول على العرض </p>
     </div>
     <div class="features" id="features">
@@ -88,8 +85,8 @@
     
   </div>
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> -->
   <script src="./scripts/gsap.min.js"></script>
+  <!-- <script src="./scripts/translations.js"></script> -->
   <script src="./scripts/app.js"></script>
 </body>
 
