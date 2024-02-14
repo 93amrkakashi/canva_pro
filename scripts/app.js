@@ -69,23 +69,10 @@ function changeLanguage() {
 }
 
 function sendEmail(email) {
-  fetch(
-    "https://65gkf.bemobtrcks.com/go/b83d8323-1249-4b8e-9741-1070c9f5c4a6?userId=" +
-      email,
-    {
-      method: "GET",
-    }
-  )
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("حدث خطأ أثناء إرسال البريد الإلكتروني.");
-      }
-      return response.json();
-    })
-    .then((data) => console.log(data))
-    .catch((error) => {
-      console.error("خطأ:", error);
-    });
+  console.log(email)
+  let url = `https://65gkf.bemobtrcks.com/go/b83d8323-1249-4b8e-9741-1070c9f5c4a6?userId=${email}`
+  window.open(url, '_blank');
+
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -103,8 +90,8 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
     sendEmail(email);
-    alert("شكرًا لك! سنتواصل معك قريبًا.");
-    emailInput.value = "";
+    // alert("شكرًا لك! سنتواصل معك قريبًا.");
+    document.getElementById("email").value = "";
   });
 });
 
