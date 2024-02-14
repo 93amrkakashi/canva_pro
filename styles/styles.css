@@ -19,7 +19,8 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  /* width: 1400px; */
+  max-width: 100vw;
   margin: 0 auto;
   text-align: center;
   padding: 20px;
@@ -128,6 +129,8 @@ a:hover {
   list-style: none;
   flex: 1;
   max-width: 80%;
+  transition: all 0.4s ease-in-out;
+
 }
 
 .logo {
@@ -232,7 +235,7 @@ a:hover {
   }
 
   a {
-    font-size: 12px;
+    font-size: 22px;
     text-align: center;
   }
   .bars{
@@ -242,15 +245,19 @@ a:hover {
     gap: 20px;
     max-width: 100%;
     position: absolute;
-    bottom: -122px;
+    top: 65px;
     display: flex;
     flex-direction: column;
     background-color: white;
     width: 100%;
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.mobile{
+  opacity: 0;
+  top: -250px;
 }
 }
-
-
 
 
 .content-wrapper {
@@ -411,3 +418,8 @@ a:hover {
     width: 100%;
   }
 }
+
+
+
+
+

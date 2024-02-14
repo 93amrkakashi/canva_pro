@@ -164,7 +164,6 @@ function changeLanguage(selectElement) {
     selectElement.value || localStorage.getItem("lang") || "ar";
   document.documentElement.lang = selectedValue;
   localStorage.setItem("lang", selectedValue);
-// تغيير الترجمات الموجودة
   const elements = document.querySelectorAll("[data-translation]");
   elements.forEach((element) => {
     const translationKey = element.dataset.translation;
@@ -191,3 +190,8 @@ async function loadTranslations() {
   //   console.error("Error loading translations:", error);
   // }
 }
+let bars = document.querySelector(".bars")
+
+bars.addEventListener("click", () => {
+  document.querySelector(".links").classList.toggle("mobile")
+})
