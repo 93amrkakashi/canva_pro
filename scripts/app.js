@@ -75,7 +75,7 @@ function changeLanguage() {
     console.log(element)
       var translationKey = element.getAttribute("data-translation");
       if (translations.hasOwnProperty(translationKey)) {
-          element.textContent = translations[translationKey];
+          element.innerHTML = translations[translationKey];
       }
   });
 }
