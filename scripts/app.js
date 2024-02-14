@@ -58,7 +58,7 @@ function changeLanguage() {
     'input[data-translation="email_placeholder"]'
   );
   emailInput.placeholder = translations["email_placeholder"];
-  document.body.dir = document.getElementById("languageSelect").value ? "rtl" : "ltr";
+  document.body.dir = document.getElementById("languageSelect").value == "ar" ? "rtl" : "ltr";
   const elements = document.querySelectorAll("[data-translation]");
   elements.forEach((element) => {
     const translationKey = element.getAttribute("data-translation");
